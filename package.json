@@ -1,6 +1,6 @@
 {
   "name": "try-require-please",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Try to require the given module, failing loudly with default message if module does not exists.",
   "repository": "tunnckoCore/try-require-please",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
