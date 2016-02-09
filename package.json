@@ -1,0 +1,26 @@
+{
+  "name": "try-require-please",
+  "version": "0.0.0",
+  "description": "Try to require the given module, failing loudly with default message if module does not exists.",
+  "repository": "tunnckoCore/try-require-please",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "define-property": "^0.2.5"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "try-require-please"
+  ]
+}
