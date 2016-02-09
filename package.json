@@ -21,6 +21,17 @@
     "index.js"
   ],
   "keywords": [
-    "try-require-please"
+    "catch",
+    "default",
+    "depend",
+    "deps",
+    "dev",
+    "install",
+    "message",
+    "please",
+    "require",
+    "try",
+    "try-require-please",
+    "util"
   ]
 }
