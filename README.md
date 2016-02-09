@@ -18,6 +18,43 @@ npm i try-require-please --save
 const tryRequirePlease = require('try-require-please')
 ```
 
+### [tryRequirePlease](index.js#L27)
+> Try to require module.
+
+**Params**
+
+* `<name>` **{String}**: module name to try to require    
+* `[wantedBy]` **{String}**: optionally give name of module that requires it    
+
+**Example**
+
+```js
+const simpleGet = tryRequire('simple-get', 'request-all')
+// => simpleGet module or the thrown error
+```
+
+or you will see something like that
+
+```
+Please install `simple-get`, because `request-all` needs it.
+Maybe `simple-get` is devDependency, because adds optional functionality?
+/home/charlike/dev/ready/try-require-please/index.js:32
+    throw warnError(name, wantedBy, err)
+    ^
+
+Error: Cannot find module 'simple-get'
+    at Function.Module._resolveFilename (module.js:339:15)
+    at Function.Module._load (module.js:290:25)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at tryRequirePlease (/home/charlike/dev/ready/try-require-please/index.js:30:11)
+    at Object.<anonymous> (/home/charlike/dev/ready/try-require-please/test.js:56:1)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+```
+
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/try-require-please/issues/new).  

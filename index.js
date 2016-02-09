@@ -10,6 +10,20 @@
 var format = require('util').format
 var define = require('define-property')
 
+/**
+ * > Try to require module.
+ *
+ * **Example**
+ *
+ * ```js
+ * const simpleGet = tryRequire('simple-get', 'request-all')
+ * // => simpleGet module or the thrown error
+ * ```
+ *
+ * @param  {String} `<name>` module name to try to require
+ * @param  {String} `[wantedBy]` optionally give name of module that requires it
+ * @api public
+ */
 module.exports = function tryRequirePlease (name, wantedBy) {
   var ret = null
   try {
